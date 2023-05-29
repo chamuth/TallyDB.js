@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "cd example && node app.js",
+    "build:watch": "tsc --watch",
+    "format": "prettier --config .prettierrc src/**/*.ts --write"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,11 @@
     "./dist"
   ],
   "dependencies": {
-    "@types/node": "^20.2.5"
+    "@types/node": "^20.2.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "prettier": "^2.8.8"
   }
 }

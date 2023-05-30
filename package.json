@@ -30,6 +30,6 @@
     "rimraf": "^5.0.1"
   },
   "lint-staged": {
-    "*.--write": "prettier --write"
+    "*.--write": "prettier --config .prettierrc src/**/*.ts --write"
   }
 }

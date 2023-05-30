@@ -7,15 +7,15 @@ const connection = tallydb.connect({
   password: "password",
 });
 
-const q1 = "TEST";
-var i = 1;
+const q1 = {
+  function: "CREATE"
+};
 
 setInterval(() => {
   connection.query(
-    q1 + i.toString(),
+    q1,
     (res) => {
       console.log("Response: " + JSON.stringify(res));
-      i++;
     },
     () => { },
   );

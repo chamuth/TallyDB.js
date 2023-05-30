@@ -41,7 +41,7 @@ export default class Connection {
    * @param error callback to handle errors
    */
   query(
-    query: string,
+    query: any,
     callback: (response: QueryResponse) => void,
     errorCallback: (error: Error) => void,
   ): void {

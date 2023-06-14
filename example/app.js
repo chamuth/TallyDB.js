@@ -8,10 +8,10 @@ const connection = tallydb.connect({
 });
 
 const q1 = {
-  function: "CREATE"
+  function: "CREATE",
 };
 
-setInterval(() => {
+setTimeout(() => {
   connection.query(
     q1,
     (res) => {
@@ -19,4 +19,4 @@ setInterval(() => {
     },
     () => { },
   );
-}, 2000)
+}, 2000);

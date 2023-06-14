@@ -1,7 +1,7 @@
 {
-  "name": "tallydb.js",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@tallydb/tallydb.js",
+  "version": "0.0.2",
+  "description": "TallyDB Node.js driver",
   "scripts": {
     "start:dev": "cd example && node app.js",
     "prebuild": "rimraf ./dist",
@@ -10,8 +10,11 @@
     "format": "prettier --config .prettierrc src/**/*.ts --write",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "database",
+    "driver"
+  ],
+  "author": "Chamuth Chamandana",
   "license": "ISC",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

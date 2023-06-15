@@ -1,6 +1,6 @@
 {
   "name": "@tallydb/tallydb.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "TallyDB Node.js driver",
   "scripts": {
     "start:dev": "cd example && node app.js",
